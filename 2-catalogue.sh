@@ -42,10 +42,10 @@ VALIDATE $? "downloading application code"
 cd /app &>> $LOGFILE
 unzip /tmp/catalogue.zip &>> $LOGFILE
 npm install &>> $LOGFILE
-cp /c/Users/kiran/repo/roboshop-shellscript/catalogue.service /etc/systemd/system/catalogue.service &>> $LOGFILE
+cp /home/centos/roboshop-shellscript/catalogue.service /etc/systemd/system/catalogue.service &>> $LOGFILE
 systemctl daemon-reload &>> $LOGFILE
 systemctl enable catalogue &>> $LOGFILE
 systemctl start catalogue &>> $LOGFILE
-cp mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
+cp /home/centos/roboshop-shellscript/mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
 dnf install mongodb-org-shell -y &>> $LOGFILE
 mongo --host mongodb.kiranku.online </app/schema/catalogue.js &>> $LOGFILE
