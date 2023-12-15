@@ -12,9 +12,9 @@ echo "Mama, mana script start ayndhi at $DATE" &>> $LOGFILE
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
-        echo -e "$2 install $R fail ayndhi ra babu $N"
+        echo -e "$2 $R fail ayndhi ra babu $N"
     else
-        echo -e "$2 $G install baga ayndhi mama $N"
+        echo -e "$2 $G  baga ayndhi mama $N"
     fi
 }
 
