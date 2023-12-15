@@ -42,7 +42,7 @@ VALIDATE $? "downloading application code"
 cd /app &>> $LOGFILE
 unzip /tmp/catalogue.zip &>> $LOGFILE
 npm install &>> $LOGFILE
-cp catalogue.service /etc/systemd/system/catalogue.service &>> $LOGFILE
+cp /c/Users/kiran/repo/roboshop-shellscript/catalogue.service /etc/systemd/system/catalogue.service &>> $LOGFILE
 systemctl daemon-reload &>> $LOGFILE
 systemctl enable catalogue &>> $LOGFILE
 systemctl start catalogue &>> $LOGFILE
